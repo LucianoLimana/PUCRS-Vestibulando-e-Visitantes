@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: #023D68;
+    font-family: 'Montserrat', sans-serif;
+    background-repeat: no-repeat;
+}
+
+/*Estilização diferente do brasão*/
+#brasao{
+    width: 71.95px;
+    height: 100px;
+    display: block;
+    margin-top: 90px;
+}
+
+#pucrs-logo{
+    margin-top: 10px;
+    width: 113px;
+    height: 24.67px;
+}
+/*Fim da estilização diferente do brasão*/
+#campos-texto{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 21px;
+}
+
+
+#escolha-texto{
+    font-size: 11px;
+    text-align: center;
+    line-height: 14.52px;
+    color: white;
+    margin-top: 1px;
+}
+
+.tipo-login{
+    display: flex;
+    flex-direction: row;
+}
+
+.visitante-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    height: 90px;
+    background: rgba(0, 105, 180, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.visitante-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px; 
+}
+
+.visitante-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#visitante-h2 h2{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#visitante-h2{
+    color: white;
+    text-decoration: none;
+}
+
+.vestibulando-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 80px;
+    height: 90px;
+    background: rgba(89, 185, 217, 0.4);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.vestibulando-img{
+    position: relative;
+    left: 5px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+}
+
+.vestibulando-img-fundo{
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 100%;
+}
+
+#vestibulando-h2 h2{
+    color: white;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+#vestibulando-h2{
+    color: white;
+    text-decoration: none;
+}
+
+.box-login{
+    margin: 35px 25px 60px 25px;
+}
+
+.tem-conta h2{
+    font-size: 15px;
+    line-height: 18px;
+    color: white;
+}
+
+.tem-conta button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #013357;
+    background: rgba(238, 204, 131, 0.61);
+    border-radius: 5px;
+    border: none;
+    width: 100px;
+    margin-top: 20px;
+}
+
+.tem-conta img{
+    margin-left: 18px;
+}
+
+@media (min-width: 355px) and (max-width: 375px){
+    body{
+        height: 667px;
+    }
+    
+    
+    #brasao{
+        width: 87.95px;
+        height: 109px;
+        left: 143px;
+    }
+
+    #pucrs-logo{
+        left: 132px;
+        top: 208px;
+    }
+
+    #campos-texto{
+        left: 37px;
+        font-size: 19px;
+    }
+
+    #escolha-texto{
+        left: 56px;
+    }
+
+    .visitante-login{
+        left: 83px;
+    }
+
+    .vestibulando-login{
+        left: 127px;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 425px){
+    body{
+        height: 667px;
+    }
+
+    #brasao{
+        width: 99.95px;
+        height: 125px;
+        left: 165px;
+    }
+
+    #pucrs-logo{
+        left: 160px;
+        top: 222px;
+    }
+
+    #campos-texto{
+        width: 321px;
+        left: 55px;
+        top: 258px;
+        font-size: 20px;
+    }
+
+    #escolha-texto{
+        top: 284px;
+        left: 69px;
+        font-size: 12px;
+    }
+
+    .tipo-login{
+        top: 358px;
+    }
+
+    .visitante-login{
+        left: 113px;
+    }
+
+    .vestibulando-login{
+        left: 160px;
+    }
+
+}

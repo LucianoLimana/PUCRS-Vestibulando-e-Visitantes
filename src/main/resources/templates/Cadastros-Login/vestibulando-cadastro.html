@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/reset.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/general.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/arrow.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/brasao.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/input-webkit.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/vestibulando-login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/main/resources/templates/static/img/ico/Brasão_PUCRS.ico" type="image/x-icon">
+    <title>PUCRS - Vestibulando</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="/src/main/resources/templates/Home/Index.html" id="arrow"><img src="/src/main/resources/templates/static/img/arrow/arrow.png"
+                    alt="Voltar para página inicial"></a>
+            <div class="full-width">
+                <img src="/src/main/resources/templates/static/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
+            </div>
+            <img src="/src/main/resources/templates/static/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="full-width">
+                <h1 id="conta-vestibulando">Essa conta é de vestibulando!</h1>
+            </div>
+            <form onsubmit="validacao()">
+                <section class="form">
+                    <div class="full-width">
+                        <label for="nome" class="form-1">Nome</label>
+                    </div>
+                    <input type="text" name="nome" id="nome" required>
+                    
+                    <div class="full-width">                    
+                        <label for="email" class="form-1">E-mail</label>
+                    </div>
+                    <input type="email" name="email" id="email" required>
+                    
+                    <div class="full-width">
+                        <label for="cpf" class="form-2">CPF</label>
+                    </div>
+                    <div class="cpf-validacao">
+                        <input type="text" name="cpf" id="campo_cpf" data-js="cpf" required><br>
+                        <span class="span-texto"></span>
+                    </div>
+                    
+                    <div class="full-width">
+                        <label for="rg" class="form-3">RG</label>
+                    </div>
+                    <input type="text" name="rg" id="rg" data-js="rg" required>
+                    
+                    <div class="full-width">
+                        <label for="senha" class="form-1">Senha</label>
+                    </div>
+                    <input type="password" name="senha" id="senha" required>
+                    
+                    <div class="full-width">
+                        <label for="confi-senha" class="form-4">Confirmar senha</label>
+                    </div>
+                    <input type="password" name="confi-senha" id="confi-senha" required>
+                </section>
+
+                <div class="full-width">
+                    <input type="submit" value="Entrar" id="botao-vestibulando" class="button_sub">
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="/src/main/resources/templates/static/js/validacaoCPF.js" type="module"></script>
+</body>
+
+</html>

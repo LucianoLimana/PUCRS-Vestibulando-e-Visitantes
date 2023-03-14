@@ -1,19 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/reset.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/general.css">
+    <link rel="stylesheet" href="/src/main/resources/templates/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="/src/main/resources/templates/static/img/ico/Brasão_PUCRS.ico" type="image/x-icon">
+    <title>PUCRS</title>
 </head>
 
 <body>
+    <header>
+        <div class="container">
+            <div class="full-width">
+                <img src="/src/main/resources/templates/static/img/logo/Brasão_PUCRS.png" alt="" id="brasao">
+            </div>
+            <img src="/src/main/resources/templates/static/img/logo/Nome_PUCRS.png" alt="PUCRS" id="pucrs-logo">
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container">
+                <div class="full-width">
+                    <h1 id="campos-texto">O que você é em nosso campus</h1>
+                </div>
+                <h2 id="escolha-texto">Por favor escolha um o modo que irá fazer login!</h2>
+            </div>
+        </section>
 
-    <h1>Home certo</h1>
-    <script src="" async defer></script>
+        <section class="tipo-login">
+            <div class="container">
+                <div class="visitante-login box-login">
+                    <a href="/src/main/resources/templates/Cadastros-Login/visitantes-cadastro.html">
+                        <div class="visitante-img-fundo">
+                            <img src="/src/main/resources/templates/static/img/user/user-visitante.png" alt="" class="visitante-img">
+                        </div>
+                    </a>
+                    <a href="/src/main/resources/templates/Cadastros-Login/visitantes-cadastro.html" id="visitante-h2">
+                        <h2>Visitante</h2>
+                    </a>
+                </div>
+
+                <div class="vestibulando-login box-login">
+                    <a href="/src/main/resources/templates/Cadastros-Login/vestibulando-cadastro.html">
+                        <div class="vestibulando-img-fundo">
+                            <img src="/src/main/resources/templates/static/img/user/user-vestibulando.png" alt="" class="vestibulando-img">
+                        </div>
+                    </a>
+                    <a href="/src/main/resources/templates/Cadastros-Login/vestibulando-cadastro.html" id="vestibulando-h2">
+                        <h2>Vestibulando</h2>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="tem-conta">
+            <div class="container">
+                <div class="full-width">
+                    <h2>Você já tem conta com nós?</h2>
+                </div>
+                <a href="/src/main/resources/templates/Cadastros-Login/vestibulando-login.html">
+                    <button type="submit">Entrar<img src="/src/main/resources/templates/static/img/arrow/Seta.png">
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
